@@ -1,52 +1,24 @@
-<!doctype html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8" />
-    <title>Making your first Phaser 3 Game - Part 1</title>
-    <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
-    <style type="text/css">
-        body {
-            margin: 0;
-        }
-    </style>
-</head>
-<body>
-
-<script type="text/javascript">
-
-    var config = {
-        type: Phaser.AUTO,
-        width: 800,
-        height: 600,
-        scene: {
-            preload: preload,
-            create: create,
-            update: update
-        }
-    };
-
-    var game = new Phaser.Game(config);
-
-    function preload ()
-    {
-    this.load.image('achtergrond', 'assets/achtergrond.png');
-    this.load.spritesheet('spritesheet', 
-        'assets/spritesheet.png',
-        { frameWidth: 32, frameHeight: 48 }
-    );
-
-    }
-
-    function create ()
-    {
-        this.add.image(400, 300, 'achtergrond');
-    }
-
-    function update ()
-    {
-    }
-
-</script>
-
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>Block Miner</title>
+  </head>
+  <body>
+    <main>
+      <h1>Want to play a game?</h1>
+      <p>You win if you manage to mine any of the following:</p>
+      <ul>
+        <li>128 Grass</li>
+        <li>64 Dirt</li>
+        <li>32 Stone</li>
+        <li>16 Iron</li>
+        <li>8 Diamond</li>
+      </ul>
+      <p>Good luck!</p>
+      <form method="get">
+        <input type="number" name="seed" placeholder="Enter a seed..." value="">
+        <input type="submit" value="Play Game" onclick='this.form.action=location.pathname + "speelgame.html";'>
+    </main>
+</body></html>
