@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+ <title>Over Leendert</title>
+ 
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+ <div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile">Over Marien</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile">Over Leendert</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile">The Game</a>
+ </div>
 </head>
-<body>
-    <h1>Over Leendert</h1>
-    <br>
-    <h2>Wie ben ik?</h2>
-    <p>Mijn naam is Leendert en ik woon op het prachtige dorp Urk. Ik ben het tweede kind uit een gezin van vier. 
-        Al heel wat jaren speel ik orgel. Dat is mijn grootste hobby. Ook houd ik erg van lezen.</p>
-    <br>
-    <h2>Toekomstvisie</h2>
-    <p>Ik weet nog niet precies wat ik wil worden en ook nog niet wat mijn vervolgstudie gaat worden. 
-        Voor nu trekt de ICT-wereld me wel, maar dat kan altijd nog veranderen. Daar past natuurlijk het vak informatica perfect bij.</p>
-    <br>
-    <h2>Welke vakken heb ik?</h2>
-    <ul>
+
+<body class="w3-content" style="max-width:850px">
+<div class="w3-container">
+
+ <div class="w3-bottombar w3-panel w3-border-blue">
+  <h1 style="text-shadow:1px 1px 0 #444">Over Leendert</h1>
+ </div>
+ 
+ <br>
+ 
+ <div class="w3-border-bottom w3-panel w3-border-blue">
+  <h2>Wie ben ik?</h2>
+ </div>
+ <p>Mijn naam is Leendert en ik woon op het prachtige dorp Urk. Ik ben het tweede kind uit een gezin van vier. Al heel wat jaren speel ik orgel. Dat is mijn grootste hobby. Ook houd ik erg van lezen.</p>
+
+ <div class="w3-card" style="width:50%;max-width:250px">
+  <img src="img_avatar1.png" alt="Person" style="width:100%">
+  <div class="w3-container">
+   <h4>Simon</h4>
+   <p>The boss of all bosses</p>
+  </div>
+ </div>
+  
+  <br>
+   
+ <div class="w3-border-bottom w3-panel w3-border-blue ">  
+  <h2>Toekomstvisie</h2>
+ </div>
+ <p>Ik weet nog niet precies wat ik wil worden en ook nog niet wat mijn vervolgstudie gaat worden. Voor nu trekt de ICT-wereld me wel, maar dat kan altijd nog veranderen. Daar past natuurlijk het vak informatica perfect bij.  </p>
+       
+ <br>
+
+ <div class="w3-border-bottom w3-panel w3-border-blue ">
+  <h2>Welke vakken heb ik?</h2>
+ </div>
+ <p>Hier een overzicht van de vakken die ik heb.</p>
+ <ul class="w3-ul w3-card w3-mobile" style="width:50%">
   <li>Bewegingsonderwijs</li>
   <li>Engels</li>
   <li>Frans</li>
@@ -31,7 +64,18 @@
   <li>Scheikunde</li>
   <li>Wiskunde B</li>
   <li>Wiskunde D</li>
-    </ul>
+ </ul>
+
+<br>
+<button class="w3-button w3-light-grey" onclick="myFunction()">Dark Mode on/off</button>
+</div>
+
+<script>
+function myFunction() {
+  let x = document.body;
+  x.classList.toggle("w3-black");
+}
+</script>
 
 </body>
 </html>
